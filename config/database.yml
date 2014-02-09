@@ -1,0 +1,26 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: rails_development 
+  username: root
+  password: asc379748 
+  host: localhost
+  port: 3306
+
+test:
+  adapter: mysql
+  encoding: utf8
+  database: rails_test 
+  username: root
+  password: asc379748 
+  host: localhost
+  port: 3306
+
+production:
+  adapter: mysql
+  encoding: utf8
+  database: rails_production 
+  username: root
+  password: asc379748 
+  host: localhost
+  port: 3306
