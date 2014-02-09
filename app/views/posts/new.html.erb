@@ -1,0 +1,19 @@
+<h1>posts#new</h1>
+<ul>
+    <li>user is allowed to add new post</li>
+    <li>submit button will redirect to create action</li>
+</ul>
+
+<%= form_for :post, url: posts_path do |f| %>
+    <p>
+         <%= f.label "title"  %>
+         <%= f.text_field "title"  %>
+    </p>
+
+    <p>
+         <%= f.label "text"  %>
+         <%= f.text_field "text"  %>
+    </p>
+
+    <p><%= f.submit %></p>
+<% end %>
