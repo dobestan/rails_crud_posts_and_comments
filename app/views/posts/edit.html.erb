@@ -4,14 +4,7 @@
     <li>similar to new post view page</li>
 </ul>
 
-<% if @post.errors.any? %>
-    <h2><%= pluralize( @post.errors.count, "error") %> occured</h2>
-    <ul>
-        <% @post.errors.full_messages.each do |error| %>
-        <li><%= error %></li>
-        <% end %>
-    </ul> 
-<% end %>
+<%= render "error_msg" %>
 
 <%= form_for :post, url: post_path, method: :patch do |f| %>
     <p>
