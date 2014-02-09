@@ -1,0 +1,19 @@
+<h1>posts#edit</h1>
+<ul>
+    <li>user can edit post</li>
+    <li>similar to new post view page</li>
+</ul>
+
+<%= form_for :post, url: post_path, method: :patch do |f| %>
+    <p>
+         <%= f.label "title"  %>
+         <%= f.text_field "title"  %>
+    </p>
+
+    <p>
+         <%= f.label "text"  %>
+         <%= f.text_field "text"  %>
+    </p>
+
+    <p><%= f.submit %></p>
+<% end %>
